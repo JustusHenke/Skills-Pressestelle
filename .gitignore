@@ -1,0 +1,9 @@
+# Generated Agent Builder export packages
+/dist/
+
+# Optional Claude Code mirror; canonical skills stay in .agents/skills/
+/.claude/skills/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
