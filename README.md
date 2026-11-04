@@ -10,6 +10,8 @@ Die Sammlung ist kein automatischer Veröffentlichungsprozess. Die Skills erstel
 
 Die Skills liegen im offenen Agent-Skills-Format. Der gemeinsame Quellbestand befindet sich unter `.agents/skills/`; anbieterspezifische Anleitungen und Prompts sind davon getrennt.
 
+Wer keine Skills installieren und keinen Agenten einrichten kann, nutzt die Vorlagen unter [`prompt_templates/`](prompt_templates/README.md): 14 Copy-Paste-Prompts für einen normalen Chat, eins zu eins zu den Skills. Sie brauchen keine Admin-Rechte und keine Vorschaufunktion. Dafür tragen sie ihre Regeln selbst im Prompt — Referenzdateien wie Stil-Guide, Eigennamenliste oder Krisenplan müssen als Material beigelegt werden. Die Vorlagen sind ein Entwurf und noch nicht an echten Pressestellentexten getestet.
+
 ## Skills
 
 | Skill | Aufgabe |
@@ -41,6 +43,7 @@ Die Skills sind **plattformneutral beschrieben**, aber nicht jede Plattform erke
 | ChatGPT | Die ChatGPT-Skills-Funktion nutzen, sofern sie für Konto und Workspace verfügbar ist; den produktspezifischen Erstellungs- und Freigabeweg beachten. Dieses Repository wird nicht automatisch als Live-Skill geladen. |
 | OpenAI API | Unterstützte Skills als Ordner oder Paket über die Skills-API bereitstellen. API-Nutzung ist von der ChatGPT-Oberfläche zu unterscheiden. |
 | Microsoft 365 Copilot Agent Builder | Jeden Skill als ZIP-Paket mit `SKILL.md` im ZIP-Stamm hochladen. Details und Prompts stehen unter [`integrations/microsoft-365-agent-builder/`](integrations/microsoft-365-agent-builder/anleitung_agent_builder.md). |
+| Jeder Chat, ohne Installation | Kein Skill und kein Agent nötig: eine Vorlage aus [`prompt_templates/`](prompt_templates/README.md) kopieren, Platzhalter füllen, freigegebenes Material einfügen. Regeln und Referenzen stehen dann nur im Prompt oder im beigelegten Material. |
 
 Die Plattformen entwickeln ihre Skills-Unterstützung weiter. Vor der Einrichtung die aktuelle Dokumentation und die Funktionen des eigenen Kontos oder Tenants prüfen. Claude Code erkennt `.agents/skills/` nicht automatisch. Wenn du die Skills dort nutzen willst, musst du sie nach `.claude/skills/` spiegeln:
 
@@ -74,6 +77,7 @@ CC0 gilt nur für Rechte, die die jeweiligen Rechteinhaber an den Materialien ei
 
 - [`integrations/microsoft-365-agent-builder/anleitung_agent_builder.md`](integrations/microsoft-365-agent-builder/anleitung_agent_builder.md) – Microsoft-365-spezifische Einrichtung
 - [`integrations/microsoft-365-agent-builder/systemprompts/`](integrations/microsoft-365-agent-builder/systemprompts/) – Agent-Anweisungen für diese Integration
+- [`prompt_templates/`](prompt_templates/README.md) – 14 Chat-Prompt-Vorlagen ohne Installation, mit README zu Nutzung und Grenzen
 
 ## Weiterführende Dokumentation
 
